@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./lib/kamadatepicker.min.css" />
+    <link rel="stylesheet" href="../font.css" />
+    <link href="./style.css" rel="stylesheet" />
+    <link href="image/logo.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="../product.css">
+    <title>کالا/بلیط سفر</title>
+  </head>
+<body class="bg-gray-100">
+
+  <header>
+    <nav class="bg-slate-800 text-gray-50 h-14 flex items-center justify-around max-sm:justify-center">
+      <div class="flex gap-2 max-sm:pt-1 items-center">
+        <img src="./image/logo.png" class="w-6 h-6" alt="" />
+        <span class="hover:text-gray-400 transition-colors duration-200 sm:text-xl text-sm font-semibold max-sm:py-1">
+          <a href="#">بلیط سفر</a>
+        </span>
+      </div>
+      <div>
+        <ul class="flex gap-5">
+          <li>
+            <a class="max-sm:hidden hover:text-slate-400 transition-colors duration-200 py-1 flex justify-between items-center gap-1" href="">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 0 1-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 0 1-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 0 1-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584ZM12 18a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd"/>
+              </svg>
+              پشتیانی
+            </a>
+          </li>
+          <li>
+            <a class="max-sm:hidden hover:text-slate-400 transition-colors duration-200 py-1 flex justify-between items-center gap-1" href="">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd" d="M1.5 6.375c0-1.036.84-1.875 1.875-1.875h17.25c1.035 0 1.875.84 1.875 1.875v3.026a.75.75 0 0 1-.375.65 2.249 2.249 0 0 0 0 3.898.75.75 0 0 1 .375.65v3.026c0 1.035-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 0 1 1.5 17.625v-3.026a.75.75 0 0 1 .374-.65 2.249 2.249 0 0 0 0-3.898.75.75 0 0 1-.374-.65V6.375Zm15-1.125a.75.75 0 0 1 .75.75v.75a.75.75 0 0 1-1.5 0V6a.75.75 0 0 1 .75-.75Zm.75 4.5a.75.75 0 0 0-1.5 0v.75a.75.75 0 0 0 1.5 0v-.75Zm-.75 3a.75.75 0 0 1 .75.75v.75a.75.75 0 0 1-1.5 0v-.75a.75.75 0 0 1 .75-.75Zm.75 4.5a.75.75 0 0 0-1.5 0V18a.75.75 0 0 0 1.5 0v-.75ZM6 12a.75.75 0 0 1 .75-.75H12a.75.75 0 0 1 0 1.5H6.75A.75.75 0 0 1 6 12Zm.75 2.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd"/>
+              </svg>
+              پیگیری بلیط
+            </a>
+          </li>
+          <li>
+            <a class="max-sm:hidden hover:text-slate-400 transition-colors duration-200 py-1 flex justify-between items-center gap-1"href="">
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd"/>
+              </svg>
+              <span>ثبت‌نام<span>/</span>ورود</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <div id="product" class="mt-10 w-11/12  mx-auto">
+    <!-- <div class="grid grid-cols-3 rounded-2xl overflow-hidden shadow-lg max-lg:grid-cols-1">
+      <div class="image-product col-span-1 w-full h-[500px] max-sm:h-56 overflow-hidden relative">
+          <span class="transition-all duration-200 p-2 rounded-full flex justify-center items-center bg-white cursor-pointer absolute top-8 -right-10">
+            <svg fill="gray" class="w-6 h-6" id="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+              <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+            </svg> 
+          </span>         
+        <img src="./productImage/hotel-slide1.svg" class="w-full h-full object-cover" alt="">
+      </div>
+      <div class="col-span-2 max-sm:gap-5 bg-white py-10 px-14 max-sm:px-2 max-sm:py-5 flex flex-col gap-32 w-full">
+
+        <div class="flex flex-col gap-10 max-sm:gap-4">
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-medium">هتل قصرطلایی مشهد</span>
+            <span class="flex gap-1 items-center">
+              <span>10</span>
+              <svg class="w-5 h-5 fill-red-500" id="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                <path class="" d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+              </svg> 
+            </span>
+          </div>
+          <p class="text-base max-sm:text-sm max-sm:leading-8 text-justify font-normal text-gray-800 leading-8 py-3">
+            قصرطلایی مشهد ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد
+          </p>
+        </div>
+        <div class="flex justify-end items-center text-gray-500 rounded-md py-2 px-2 bg-gray-200">
+          <div class="flex gap-2 items-center">
+            <span>شبی از</span>
+            <span class="text-4xl font-semibold text-blue-600""> 120000 </span> 
+            <span>تومان</span>
+          </div>
+        </div>
+
+      </div>
+    </div> -->
+  </div>
+
+  <script type="module" src="./js/runProduct.js"></script>
+</body>
+</html>

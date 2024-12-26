@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.responsive{
+  @apply mx-auto md:w-11/12 sm:w-full max-w-7xl
+  /* شروع میشه sm  کار پس از  */
+}
+.nav-absolute{
+  @apply sm:absolute sm:top-0 w-full 
+}
+.card{
+  @apply flex justify-between items-center px-4 py-2 font-normal cursor-pointer bg-gray-50 shadow-md text-black mt-5 rounded-lg hover:border-b hover:border-black transition-all duration-200 ease-in border-b border-white max-[500px]:py-2 max-[500px]:mt-1
+}
+.active{
+  @apply bg-sky-600 text-gray-50
+}
+.card.active svg{
+  @apply fill-gray-200 
+}
+.card.active>svg{
+  @apply -rotate-90  transition-transform duration-500
+}
+.inputs{
+  @apply bg-white shadow-md py-3 px-3 rounded-md
+}
+.card-tour{
+  @apply font-medium hover:px-6 transition-all duration-200 flex rounded-lg py-3 px-4 justify-between items-center w-3/4 h-full text-cyan-700 shadow-md border-2 border-cyan-700
+}

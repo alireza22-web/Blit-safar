@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./lib/kamadatepicker.min.css" />
+    <link rel="stylesheet" href="../font.css" />
+    <link href="./style.css" rel="stylesheet" />
+    <link href="image/logo.png" rel="shortcut icon" />
+    <title>بلیط سفر</title>
+  </head>
+  <body class="bg-gray-100">
+    <!-- <div class="w-full h-screen bg-gradient-to-t from-sky-600 to-sky-900  absolute z-50 transition-all duration-500" id="loading">
+      <div class="flex justify-center items-center flex-col gap-y-10 h-full ">
+        <div class="text-black font-semibold text-2xl">با</div>
+        <svg width="312" height="85" viewBox="0 0 312 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M34.28 42.144C35.304 42.144 35.976 42.88 36.296 44.352C36.68 45.824 36.872 48.064 36.872 51.072C36.872 54.144 36.68 56.416 36.296 57.888C35.912 59.296 35.24 60 34.28 60C32.552 60 30.184 59.744 27.176 59.232C25.96 62.56 24.232 66.688 21.992 71.616C20.52 74.816 19.08 77.664 17.672 80.16C16.328 82.72 15.496 84.192 15.176 84.576C12.808 83.744 9.992 82.176 6.728 79.872C4.04 78.016 2.024 76.32 0.68 74.784C4.52 69.536 7.88 64.384 10.76 59.328C13.96 53.632 16.584 47.616 18.632 41.28L19.496 40.704C22.184 41.28 24.936 41.664 27.752 41.856C30.632 42.048 32.808 42.144 34.28 42.144ZM68.714 42.144C69.738 42.144 70.41 42.88 70.73 44.352C71.114 45.824 71.306 48.064 71.306 51.072C71.306 54.144 71.114 56.416 70.73 57.888C70.346 59.296 69.674 60 68.714 60C65.578 60 62.73 59.168 60.17 57.504C55.178 59.168 46.538 60 34.25 60C33.29 60 32.618 59.296 32.234 57.888C31.85 56.416 31.658 54.144 31.658 51.072C31.658 48.064 31.85 45.824 32.234 44.352C32.554 42.88 33.226 42.144 34.25 42.144H36.17C36.298 39.2 37.066 36.224 38.474 33.216C39.882 30.208 41.77 27.744 44.138 25.824C46.57 23.84 49.29 22.848 52.298 22.848C56.394 22.848 59.658 24.608 62.09 28.128C64.522 31.648 65.738 35.936 65.738 40.992V42.144H68.714ZM51.53 41.952C53.706 41.952 55.978 41.728 58.346 41.28C57.258 40.192 55.914 39.328 54.314 38.688C52.778 37.984 51.274 37.6 49.802 37.536C48.522 37.536 47.434 37.856 46.538 38.496C45.706 39.072 45.322 39.84 45.386 40.8C45.962 41.568 48.01 41.952 51.53 41.952ZM51.05 17.088C49.706 16.576 47.946 15.584 45.77 14.112C43.594 12.576 42.09 11.264 41.258 10.176C41.45 9.344 41.93 8.224 42.698 6.816C43.53 5.344 44.458 4.032 45.482 2.88C46.506 1.664 47.402 0.991997 48.17 0.863995C48.874 0.735996 49.93 1.056 51.338 1.824C52.81 2.592 54.154 3.552 55.37 4.704C56.65 5.792 57.354 6.656 57.482 7.296C57.738 8.256 57.002 9.952 55.274 12.384C53.61 14.752 52.202 16.32 51.05 17.088ZM138.446 27.168C139.662 30.816 140.27 35.04 140.27 39.84C140.27 43.232 139.918 46.464 139.214 49.536C138.574 52.608 137.614 55.168 136.334 57.216C131.982 59.264 127.758 60.288 123.662 60.288C120.654 60.288 117.966 59.712 115.598 58.56C113.294 57.344 111.438 55.584 110.03 53.28H109.166C107.758 55.584 105.934 57.376 103.694 58.656C101.518 59.872 99.086 60.48 96.398 60.48C93.902 60.48 91.534 59.936 89.294 58.848C87.118 57.696 85.39 56.16 84.11 54.24H83.246C81.134 56.608 78.958 58.176 76.718 58.944C74.542 59.648 71.886 60 68.75 60C67.79 60 67.118 59.296 66.734 57.888C66.35 56.416 66.158 54.144 66.158 51.072C66.158 48.064 66.35 45.824 66.734 44.352C67.054 42.88 67.726 42.144 68.75 42.144C71.374 42.144 73.55 41.984 75.278 41.664C77.07 41.28 78.702 40.352 80.174 38.88C81.646 37.344 82.574 34.976 82.958 31.776H90.926C91.246 39.072 93.55 42.72 97.838 42.72C100.014 42.72 101.934 41.856 103.598 40.128C105.326 38.4 106.606 35.68 107.438 31.968L115.502 33.216C115.374 34.368 115.31 35.2 115.31 35.712C115.31 40.64 117.39 43.104 121.55 43.104C122.894 43.104 124.59 42.816 126.638 42.24C126.062 39.808 125.358 37.408 124.526 35.04C123.758 32.672 123.278 31.232 123.086 30.72L138.446 27.168ZM219.833 42.144C220.857 42.144 221.529 42.88 221.849 44.352C222.233 45.824 222.425 48.064 222.425 51.072C222.425 54.144 222.233 56.416 221.849 57.888C221.465 59.296 220.793 60 219.833 60C215.865 60 212.345 58.688 209.273 56.064L209.177 56.16C200.921 59.04 191.481 60.48 180.857 60.48C173.241 60.48 166.457 59.776 160.505 58.368C160.569 53.056 161.625 47.456 163.673 41.568C164.825 41.888 166.873 42.24 169.817 42.624C170.649 40.448 171.257 37.728 171.641 34.464C172.025 31.2 172.217 26.976 172.217 21.792C172.217 17.568 172.121 12.48 171.929 6.528L187.385 5.664C187.385 13.92 187.001 20.544 186.233 25.536C189.305 23.296 191.961 22.048 194.201 21.792C194.713 21.728 195.449 21.696 196.409 21.696C201.529 21.696 205.657 23.488 208.793 27.072C211.993 30.592 213.657 35.616 213.785 42.144H219.833ZM179.705 43.296C182.137 43.488 184.921 43.584 188.057 43.584C191.897 43.584 195.225 43.424 198.041 43.104C200.921 42.784 202.553 42.272 202.937 41.568C202.553 40.544 201.689 39.744 200.345 39.168C199.001 38.528 197.433 38.208 195.641 38.208C193.209 38.208 190.585 38.656 187.769 39.552C184.953 40.384 182.265 41.632 179.705 43.296ZM257.411 42.144C258.435 42.144 259.107 42.88 259.427 44.352C259.811 45.824 260.003 48.064 260.003 51.072C260.003 54.144 259.811 56.416 259.427 57.888C259.043 59.296 258.371 60 257.411 60C250.883 60 245.923 57.76 242.531 53.28H241.667C240.323 55.2 238.435 56.64 236.003 57.6C233.635 58.56 231.299 59.2 228.995 59.52C226.691 59.84 223.651 60 219.875 60C218.915 60 218.243 59.296 217.859 57.888C217.475 56.416 217.283 54.144 217.283 51.072C217.283 48.064 217.475 45.824 217.859 44.352C218.179 42.88 218.851 42.144 219.875 42.144C223.395 42.144 226.339 41.92 228.707 41.472C231.075 41.024 233.219 40.064 235.139 38.592C237.059 37.12 238.627 34.912 239.843 31.968L247.907 33.216C247.843 33.728 247.811 34.432 247.811 35.328C247.811 38.016 248.515 39.84 249.923 40.8C251.331 41.696 253.827 42.144 257.411 42.144ZM248.771 72.768C248.899 73.728 248.195 75.296 246.659 77.472C245.123 79.648 243.811 81.12 242.723 81.888C241.507 81.376 239.971 80.48 238.115 79.2C236.259 77.984 234.883 76.864 233.987 75.84C233.347 76.992 232.515 78.176 231.491 79.392C230.467 80.608 229.635 81.44 228.995 81.888C227.715 81.312 226.083 80.32 224.099 78.912C222.115 77.568 220.707 76.416 219.875 75.456C220.259 74.112 221.219 72.32 222.755 70.08C224.291 67.84 225.571 66.72 226.595 66.72C227.619 66.72 229.155 67.424 231.203 68.832C233.251 70.304 234.499 71.52 234.947 72.48C235.843 70.88 236.771 69.504 237.731 68.352C238.691 67.264 239.555 66.72 240.323 66.72C241.347 66.72 242.947 67.488 245.123 69.024C247.363 70.624 248.579 71.872 248.771 72.768ZM287.807 42.144C288.831 42.144 289.503 42.88 289.823 44.352C290.207 45.824 290.399 48.064 290.399 51.072C290.399 54.144 290.207 56.416 289.823 57.888C289.439 59.296 288.767 60 287.807 60C284.991 60 282.271 59.616 279.647 58.848C277.087 58.016 274.975 56.928 273.311 55.584C269.023 58.528 263.711 60 257.375 60C256.415 60 255.743 59.296 255.359 57.888C254.975 56.416 254.783 54.144 254.783 51.072C254.783 48.064 254.975 45.824 255.359 44.352C255.679 42.88 256.351 42.144 257.375 42.144C261.279 42.144 264.863 42.048 268.127 41.856C267.935 37.248 267.519 31.776 266.879 25.44C266.303 19.104 265.919 14.912 265.727 12.864C265.535 11.456 265.311 9.344 265.055 6.528L280.607 5.664C281.375 18.08 281.823 29.6 281.951 40.224V42.144H287.807ZM309.348 27.168C310.5 30.816 311.076 35.008 311.076 39.744C311.076 43.2 310.724 46.464 310.02 49.536C309.38 52.608 308.42 55.168 307.14 57.216C301.316 59.072 294.884 60 287.844 60C286.884 60 286.212 59.296 285.828 57.888C285.444 56.416 285.252 54.144 285.252 51.072C285.252 48.064 285.444 45.824 285.828 44.352C286.148 42.88 286.82 42.144 287.844 42.144C291.876 42.144 294.98 41.856 297.156 41.28C296.516 38.592 295.428 35.072 293.892 30.72L309.348 27.168ZM294.756 66.72C295.46 66.592 296.516 66.912 297.924 67.68C299.396 68.448 300.74 69.376 301.956 70.464C303.236 71.616 303.94 72.512 304.068 73.152C304.324 74.112 303.588 75.776 301.86 78.144C300.196 80.576 298.788 82.176 297.636 82.944C296.292 82.432 294.532 81.408 292.356 79.872C290.18 78.4 288.676 77.12 287.844 76.032C288.036 75.2 288.516 74.048 289.284 72.576C290.116 71.168 291.044 69.856 292.068 68.64C293.092 67.488 293.988 66.848 294.756 66.72Z" fill="white"/>
+        </svg>  
+        <div class="text-black font-semibold text-2xl">تضمینی سفر کن</div>
+      </div>
+    </div> -->
+    
+    <div>
+      <header class="relative text-gray-50">
+        <img
+          src="./image/header(edit).svg"
+          class="w-full relative hidden sm:block"
+          alt=""
+        />
+        <div class="nav-absolute">
+          <nav
+            id="navabr"
+            class="sm:bg-black sm:bg-opacity-40 bg-slate-800 bg-opacity-1 h-[40px] sm:h-[55px] px-5"
+          >
+            <div
+              class="flex flex-row max-sm:flex-col justify-between items-center h-full w-full responsive"
+            >
+              <div class="flex gap-2 max-sm:pt-1 items-center">
+                <img src="./image/logo.png" class="w-6 h-6" alt="" />
+                <span
+                  class="hover:text-gray-400 transition-colors duration-200 sm:text-xl text-sm font-semibold max-sm:py-2"
+                  ><a href="#">بلیط سفر</a></span
+                >
+              </div>
+              <ul class="flex gap-5">
+                <li>
+                  <a
+                    class="max-sm:hidden hover:text-slate-400 transition-colors duration-200 py-1 flex justify-between items-center gap-1"
+                    href=""
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 0 1-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 0 1-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 0 1-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584ZM12 18a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    پشتیانی
+                  </a>
+                </li>
+                <li>
+                  <a class="max-sm:hidden hover:text-slate-400 transition-colors duration-200 py-1 flex justify-between items-center gap-1" href="">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd" d="M1.5 6.375c0-1.036.84-1.875 1.875-1.875h17.25c1.035 0 1.875.84 1.875 1.875v3.026a.75.75 0 0 1-.375.65 2.249 2.249 0 0 0 0 3.898.75.75 0 0 1 .375.65v3.026c0 1.035-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 0 1 1.5 17.625v-3.026a.75.75 0 0 1 .374-.65 2.249 2.249 0 0 0 0-3.898.75.75 0 0 1-.374-.65V6.375Zm15-1.125a.75.75 0 0 1 .75.75v.75a.75.75 0 0 1-1.5 0V6a.75.75 0 0 1 .75-.75Zm.75 4.5a.75.75 0 0 0-1.5 0v.75a.75.75 0 0 0 1.5 0v-.75Zm-.75 3a.75.75 0 0 1 .75.75v.75a.75.75 0 0 1-1.5 0v-.75a.75.75 0 0 1 .75-.75Zm.75 4.5a.75.75 0 0 0-1.5 0V18a.75.75 0 0 0 1.5 0v-.75ZM6 12a.75.75 0 0 1 .75-.75H12a.75.75 0 0 1 0 1.5H6.75A.75.75 0 0 1 6 12Zm.75 2.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd"/>
+                    </svg>
+                    پیگیری بلیط
+                  </a>
+                </li>
+                <li>
+                  <a class="max-sm:hidden hover:text-slate-400 transition-colors duration-200 py-1 flex justify-between items-center gap-1"href="">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>ثبت‌نام<span>/</span>ورود</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section class="hidden max-sm:flex flex-col border-b border-gray-500  pb-3 w-11/12 mx-auto">
+        <div class="flex justify-center items-center">
+          <h2 class="py-2 px-4">
+            با <span class="text-sky-800 font-semibold">بلیط سفر</span> تضمینی سفر کنید.
+          </h2>
+        </div>
+        <p class="text-gray-700 text-base px-4 leading-7">
+          بلیط سفر بزرگترین و معتبرترین سایت خرید اینترنتی بلیط هواپیما ، قطار و
+          اتوبوس در کشور است که از سال ۱۳۹۹ کار خود را شروع کرده و در این مدت
+          توانسته رضایت درصد قابل توجهی از کاربران را به دست بیاورد.
+        </p>
+        <button class=" text-left">
+          <a href="" class="py-1 px-2 rounded-lg text-gray-100 bg-sky-900">
+            <span>ثبت‌نام<span>/</span>ورود</span>
+          </a>
+        </button>
+      </section><!-- توضیح سفر بلیط در حالت رریسپانسیو-->
+
+      <section
+        class="grid mt-2 w-full responsive grid-cols-2 md:grid-cols-4 gap-x-4 text-red-800 border-b border-cyan-300 pb-5 max-[500px]:px-2 max-[500px]:gap-2"
+      >
+        <div class="card" onclick="(showTravel(0))">
+          <div class="flex justify-start items-center gap-2">
+            <svg
+              class="w-7 h-7 max-[500px]:w-5 max-[500px]:h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+            >
+              <path
+                d="M482.3 192c34.2 0 93.7 29 93.7 64c0 36-59.5 64-93.7 64l-116.6 0L265.2 495.9c-5.7 10-16.3 16.1-27.8 16.1l-56.2 0c-10.6 0-18.3-10.2-15.4-20.4l49-171.6L112 320 68.8 377.6c-3 4-7.8 6.4-12.8 6.4l-42 0c-7.8 0-14-6.3-14-14c0-1.3 .2-2.6 .5-3.9L32 256 .5 145.9c-.4-1.3-.5-2.6-.5-3.9c0-7.8 6.3-14 14-14l42 0c5 0 9.8 2.4 12.8 6.4L112 192l102.9 0-49-171.6C162.9 10.2 170.6 0 181.2 0l56.2 0c11.5 0 22.1 6.2 27.8 16.1L365.7 192l116.6 0z"
+              />
+            </svg>
+            <span>پرواز</span>
+          </div>
+          <svg
+            class="w-4 h-4 angle max-[500px]:w-2 max-[500px]:h-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+            />
+          </svg>
+        </div>
+        <div class="card" onclick="(showTravel(1))">
+          <div class="flex justify-start items-center gap-2">
+            <svg
+              class="w-7 h-7 max-[500px]:w-5 max-[500px]:h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+            >
+              <path
+                d="M288 0C422.4 0 512 35.2 512 80l0 16 0 32c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32l0 32c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-32-192 0 0 32c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32c0 0 0 0 0 0l0-32s0 0 0 0l0-16C64 35.2 153.6 0 288 0zM128 160l0 96c0 17.7 14.3 32 32 32l112 0 0-160-112 0c-17.7 0-32 14.3-32 32zM304 288l112 0c17.7 0 32-14.3 32-32l0-96c0-17.7-14.3-32-32-32l-112 0 0 160zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16L208 64c-8.8 0-16 7.2-16 16s7.2 16 16 16l160 0c8.8 0 16-7.2 16-16z"
+              />
+            </svg>
+            <span>اتوبوس</span>
+          </div>
+          <svg
+            class="w-4 h-4 angle max-[500px]:w-2 max-[500px]:h-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+            />
+          </svg>
+        </div>
+        <div class="card" onclick="(showTravel(2))">
+          <div class="flex justify-start items-center gap-2">
+            <svg
+              class="w-7 h-7 max-[500px]:w-5 max-[500px]:h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M96 0C43 0 0 43 0 96L0 352c0 48 35.2 87.7 81.1 94.9l-46 46C28.1 499.9 33.1 512 43 512l39.7 0c8.5 0 16.6-3.4 22.6-9.4L160 448l128 0 54.6 54.6c6 6 14.1 9.4 22.6 9.4l39.7 0c10 0 15-12.1 7.9-19.1l-46-46c46-7.1 81.1-46.9 81.1-94.9l0-256c0-53-43-96-96-96L96 0zM64 96c0-17.7 14.3-32 32-32l256 0c17.7 0 32 14.3 32 32l0 96c0 17.7-14.3 32-32 32L96 224c-17.7 0-32-14.3-32-32l0-96zM224 288a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+              />
+            </svg>
+            <span>قطار</span>
+          </div>
+          <svg
+            class="w-4 h-4 angle max-[500px]:w-2 max-[500px]:h-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+            />
+          </svg>
+        </div>
+        <div class="card" onclick="(showTravel(3))">
+          <div class="flex justify-start items-center gap-2">
+            <svg
+              class="w-7 h-7 max-[500px]:w-5 max-[500px]:h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M0 32C0 14.3 14.3 0 32 0L480 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 384c17.7 0 32 14.3 32 32s-14.3 32-32 32l-176 0 0-48c0-26.5-21.5-48-48-48s-48 21.5-48 48l0 48L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32L32 64C14.3 64 0 49.7 0 32zm96 80l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zM240 96c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zM112 192c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM328 384c13.3 0 24.3-10.9 21-23.8c-10.6-41.5-48.2-72.2-93-72.2s-82.5 30.7-93 72.2c-3.3 12.8 7.8 23.8 21 23.8l144 0z"
+              />
+            </svg>
+            <span>هتل</span>
+          </div>
+          <svg
+            class="w-4 h-4 angle max-[500px]:w-2 max-[500px]:h-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+            />
+          </svg>
+        </div>
+      </section><!-- دکمه های پرواز و اتوبوس و... -->
+
+      <section class="flex-col responsive mt-5">
+        <form action="" class="inputs hidden gap-2" id="plane">
+          <div class="flex flex-col">
+            <div class="flex items-center gap-6">
+              <div class="flex gap-1 items-center">
+                <label for="dakhely">داخلی</label>
+                <input type="radio" checked id="dakhely" name="plane" />
+              </div>
+              <div class="flex gap-1 items-center">
+                <label for="kharegi">خارجی</label>
+                <input type="radio" id="kharegi" name="plane" />
+              </div>
+            </div>
+            <div class="flex sm:flex-row sm:gap-4 flex-col">
+              <div
+                class="sm:flex sm:flex-row flex-col justify-between mt-4 gap-3"
+              >
+                <div class="w-full flex gap-3">
+                  <input
+                    autocomplete="off"
+                    class="mt-4 bg-gray-300 placeholder-slate-600 sm:mt-0 w-full sm:w-11/12 py-2 px-3 rounded-md focus:outline-none"
+                    type="text"
+                    placeholder="مبدا"
+                  />
+                  <input
+                    autocomplete="off"
+                    class="mt-4 bg-gray-300 placeholder-slate-600 sm:mt-0 w-full sm:w-11/12 py-2 px-3 rounded-md focus:outline-none"
+                    type="text"
+                    placeholder="مقصد"
+                  />
+                </div>
+                <div class="flex gap-3 w-full">
+                  <input
+                    autocomplete="off"
+                    class="mt-4 bg-gray-300 placeholder-slate-600 sm:mt-0 w-full py-2 px-3 rounded-md focus:outline-none"
+                    id="date1"
+                    type="text"
+                    placeholder="تاریخ رفت"
+                  />
+                  <input
+                    autocomplete="off"
+                    class="mt-4 bg-gray-300 placeholder-slate-600 sm:mt-0 w-full py-2 px-3 rounded-md focus:outline-none"
+                    id="date2"
+                    type="text"
+                    placeholder="تاریخ برگشت"
+                  />
+                </div>
+              </div>
+              <div class="mt-4 flex justify-end">
+                <button
+                  class="py-2 px-4 w-full sm:w-32 bg-sky-700 text-white rounded-lg"
+                >
+                  جستجو
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <form action="" class="inputs hidden" id="bus">
+          <div class="grid gap-x-2 sm:grid-rows-1 sm:grid-cols-4 grid-cols-2">
+            <input
+              autocomplete="off"
+              class="mt-4 bg-gray-300 placeholder-slate-600 sm:mt-0 py-2 px-3 rounded-md focus:outline-none"
+              type="text"
+              placeholder="مبدا"
+            />
+            <input
+              autocomplete="off"
+              class="mt-4 bg-gray-300 placeholder-slate-600 sm:mt-0 py-2 px-3 rounded-md focus:outline-none"
+              type="text"
+              placeholder="مقصد"
+            />
+            <input
+              autocomplete="off"
+              class="mt-4 bg-gray-300 placeholder-slate-600 sm:mt-0 w-full py-2 px-3 rounded-md focus:outline-none"
+              id="date3"
+              type="text"
+              placeholder="تاریخ رفت"
+            />
+            <div class="text-left mt-4 sm:mt-0">
+              <button
+                class="py-2 px-4 w-full sm:w-32 bg-cyan-700 text-white rounded-lg"
+              >
+                جستجو
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <form action="" class="inputs hidden" id="train">
+          <div class="flex flex-col sm:gap-y-5">
+            <div class="flex gap-20 items-center max-sm:justify-center">
+              <div
+                class="flex gap-x-5 items-center max-sm:flex-col max-sm:items-start gap-2 max-sm:justify-start"
+              >
+                <div class="flex items-center gap-x-1" class="">
+                  <label class="raft-bargasht max-sm:text-sm" for="raftbargasht"
+                    >رفت و برگشت</label
+                  >
+                  <input
+                    class="raft-bargasht"
+                    type="radio"
+                    id="raftbargasht"
+                    checked
+                    name="raft"
+                    value="ratebargasht"
+                  />
+                </div>
+                <div class="flex items-center gap-x-1">
+                  <label class="raft-not max-sm:text-sm" for="raft"
+                    >یکطرفه</label
+                  >
+                  <input
+                    class="raft-not"
+                    type="radio"
+                    id="raft"
+                    name="raft"
+                    value="yektarafe"
+                  />
+                </div>
+              </div>
+              <div
+                class="flex gap-x-5 items-center max-sm:flex-col max-sm:items-start gap-2 max-sm:justify-start"
+              >
+                <div class="flex items-center gap-x-1">
+                  <label for="hamlebar" class="max-sm:text-sm"
+                    >حمل بار میخواهم</label
+                  >
+                  <input
+                    type="checkbox"
+                    name="hamlebar"
+                    id="hamlebar"
+                    value="hamlebar"
+                  />
+                </div>
+                <div class="flex items-center gap-x-1">
+                  <label for="darbast" class="max-sm:text-sm"
+                    >دربست میخواهم</label
+                  >
+                  <input
+                    type="checkbox"
+                    name="darbast"
+                    id="darbast"
+                    value="darbast"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="grid gap-x-2 sm:grid-rows-1 sm:grid-cols-5 grid-cols-2">
+              <input
+                autocomplete="off"
+                class="mt-4 bg-gray-300 placeholder-slate-600 sm:mt-0 py-2 px-3 rounded-md focus:outline-none"
+                type="text"
+                placeholder="مبدا"
+              />
+              <input
+                autocomplete="off"
+                class="mt-4 bg-gray-300 placeholder-slate-600 sm:mt-0 py-2 px-3 rounded-md focus:outline-none"
+                type="text"
+                placeholder="مقصد"
+              />
+              <input
+                autocomplete="off"
+                class="mt-4 bg-gray-300 placeholder-slate-600 sm:mt-0 w-full py-2 px-3 rounded-md focus:outline-none"
+                id="date4"
+                type="text"
+                placeholder="تاریخ رفت"
+              />
+              <input
+                autocomplete="off"
+                class="mt-4 bg-gray-300 placeholder-slate-600 sm:mt-0 w-full py-2 px-3 rounded-md focus:outline-none"
+                id="date5"
+                type="text"
+                placeholder="تاریخ برگشت"
+              />
+              <div class="text-left mt-4 sm:mt-0">
+                <button
+                  class="py-2 px-4 w-full sm:w-32 bg-cyan-700 text-white rounded-lg"
+                >
+                  جستجو
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <form action="" class="inputs hidden" id="hotel">
+          <div class="grid gap-x-2 sm:grid-rows-1 sm:grid-cols-4 grid-cols-2">
+            <input
+              autocomplete="off"
+              class="mt-4 bg-gray-300 placeholder-slate-600 sm:mt-0 py-2 px-3 rounded-md focus:outline-none"
+              type="text"
+              placeholder="مقصد شهر یا هتل"
+            />
+            <input
+              autocomplete="off"
+              class="mt-4 bg-gray-300 placeholder-slate-600 sm:mt-0 w-full py-2 px-3 rounded-md focus:outline-none"
+              id="date6"
+              type="text"
+              placeholder="تاریخ ورود"
+            />
+            <input
+              autocomplete="off"
+              class="mt-4 bg-gray-300 placeholder-slate-600 sm:mt-0 w-full py-2 px-3 rounded-md focus:outline-none"
+              id="date7"
+              type="text"
+              placeholder="تاریخ خروج"
+            />
+            <div class="text-left mt-4 sm:mt-0">
+              <button
+                class="py-2 px-4 w-full sm:w-32 bg-cyan-700 text-white rounded-lg"
+              >
+                جستجو
+              </button>
+            </div>
+          </div>
+        </form>
+      </section><!-- فرم ها -->
+
+      <section
+        class="bg-white max-sm:flex justify-around max-[420px]:justify-between max-[420px]:px-5 items-center hidden px-10 py-5 mt-5 responsive"
+      >
+        <div
+          class="max-[420px]:w-20 max-[420px]:text-sm max-[420px]:h-12 bg-sky-600 text-white items-center shadow-md rounded-md w-28 h-16"
+        >
+          <a href="" class="flex flex-col justify-center items-center pt-1">
+            <svg
+              class="w-8 h-8 max-[420px]:w-5 max-[420px]:h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 0 1-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 0 1-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 0 1-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584ZM12 18a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            پشتیانی
+          </a>
+        </div>
+        <div
+          class="max-[420px]:w-20 max-[420px]:text-sm max-[420px]:h-12 bg-sky-600 text-white items-center shadow-md rounded-md w-28 h-16"
+        >
+          <a href="" class="flex flex-col justify-center items-center pt-1">
+            <svg
+              class="w-8 h-8 max-[420px]:w-5 max-[420px]:h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.5 6.375c0-1.036.84-1.875 1.875-1.875h17.25c1.035 0 1.875.84 1.875 1.875v3.026a.75.75 0 0 1-.375.65 2.249 2.249 0 0 0 0 3.898.75.75 0 0 1 .375.65v3.026c0 1.035-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 0 1 1.5 17.625v-3.026a.75.75 0 0 1 .374-.65 2.249 2.249 0 0 0 0-3.898.75.75 0 0 1-.374-.65V6.375Zm15-1.125a.75.75 0 0 1 .75.75v.75a.75.75 0 0 1-1.5 0V6a.75.75 0 0 1 .75-.75Zm.75 4.5a.75.75 0 0 0-1.5 0v.75a.75.75 0 0 0 1.5 0v-.75Zm-.75 3a.75.75 0 0 1 .75.75v.75a.75.75 0 0 1-1.5 0v-.75a.75.75 0 0 1 .75-.75Zm.75 4.5a.75.75 0 0 0-1.5 0V18a.75.75 0 0 0 1.5 0v-.75ZM6 12a.75.75 0 0 1 .75-.75H12a.75.75 0 0 1 0 1.5H6.75A.75.75 0 0 1 6 12Zm.75 2.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            پیگیری بلیط
+          </a>
+        </div>
+        <div
+          class="max-[420px]:w-20 max-[420px]:text-sm max-[420px]:h-12 bg-sky-600 text-white items-center shadow-md rounded-md w-28 h-16"
+        >
+          <a href="" class="flex flex-col justify-center items-center pt-1">
+            <svg
+              class="w-8 h-8 max-[420px]:w-5 max-[420px]:h-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span>ثبت‌نام<span>/</span>ورود</span>
+          </a>
+        </div>
+      </section>
+      <!-- این برای پشتیبانی و اینا که پنهان کردیم در حالت ریپانسیو -->
+
+      <section class="max-sm:hidden responsive block border-b border-gray-500 py-2 mt-5 w-3/4 mx-auto">
+        <div class="flex justify-center items-center">
+          <h2 class="py-2 px-4">
+            با <span class="text-sky-500 font-semibold">بلیط سفر</span> تضمینی سفر کنید.
+          </h2>
+        </div>
+        <p class="text-gray-700 text-base px-4 leading-7">
+          بلیط سفر بزرگترین و معتبرترین سایت خرید اینترنتی بلیط هواپیما ، قطار و
+          اتوبوس در کشور است که از سال ۱۳۹۹ کار خود را شروع کرده و در این مدت
+          توانسته رضایت درصد قابل توجهی از کاربران را به دست بیاورد.
+        </p>
+      </section><!-- توضیح سفر بلیط در حالت رریسپانسیو-->
+
+      <div class="relative">
+        <section class="responsive mt-10 grid grid-cols-4 grid-rows-2 sm:gap-x-5 sm:gap-y-5 gap-y-3 gap-x-2 rounded-2xl overflow-hidden">
+          <img src="./image/hotel-yazd.svg" class="col-span-1 brightness-100 shadow-md" alt=""/>
+          <img src="./image/plane.svg" class="col-span-3 brightness-100 shadow-md" alt=""/>
+          <img src="./image/bus.svg" class="col-span-2 brightness-100" alt="" />
+          <img src="./image/hotel-italia.svg" class="col-span-1 brightness-100" alt=""/>
+          <img src="./image/hotel-paris.svg" class="col-span-1 brightness-100" alt=""/>
+        </section>
+      </div><!-- تصاویر سایت -->
+
+      <section class="w-full bg-white mt-12">
+        <article class="grid grid-cols-3 max-sm:grid-cols-2 max-[480px]:grid-cols-1 responsive">
+          <div class="place-items-center col-span-1">
+            <img class="w-[300px] h-[300px]" src="./image/title.svg" alt="">
+          </div>
+          <div class="col-span-2 max-sm:col-span-1 py-5 px-1 pr-5">
+            <div class="flex gap-x-1 justify-start items-center">
+              <svg class="w-5 h-5 fill-sky-900" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M94.1 315.1c0 25.9-21.2 47.1-47.1 47.1S0 341 0 315.1c0-25.9 21.2-47.1 47.1-47.1h47.1v47.1zm23.7 0c0-25.9 21.2-47.1 47.1-47.1s47.1 21.2 47.1 47.1v117.8c0 25.9-21.2 47.1-47.1 47.1s-47.1-21.2-47.1-47.1V315.1zm47.1-189c-25.9 0-47.1-21.2-47.1-47.1S139 32 164.9 32s47.1 21.2 47.1 47.1v47.1H164.9zm0 23.7c25.9 0 47.1 21.2 47.1 47.1s-21.2 47.1-47.1 47.1H47.1C21.2 244 0 222.8 0 196.9s21.2-47.1 47.1-47.1H164.9zm189 47.1c0-25.9 21.2-47.1 47.1-47.1 25.9 0 47.1 21.2 47.1 47.1s-21.2 47.1-47.1 47.1h-47.1V196.9zm-23.7 0c0 25.9-21.2 47.1-47.1 47.1-25.9 0-47.1-21.2-47.1-47.1V79.1c0-25.9 21.2-47.1 47.1-47.1 25.9 0 47.1 21.2 47.1 47.1V196.9zM283.1 385.9c25.9 0 47.1 21.2 47.1 47.1 0 25.9-21.2 47.1-47.1 47.1-25.9 0-47.1-21.2-47.1-47.1v-47.1h47.1zm0-23.7c-25.9 0-47.1-21.2-47.1-47.1 0-25.9 21.2-47.1 47.1-47.1h117.8c25.9 0 47.1 21.2 47.1 47.1 0 25.9-21.2 47.1-47.1 47.1H283.1z"/></svg>
+              <h2 class="py-2 font-semibold">مزایای خرید از بلیط هواپیما از <span class="text-sky-900 font-bold">بلیط سفر</span></h2>
+            </div>
+            <p class="leading-8 text-lg font-normal text-gray-700 max-sm:text-sm max-sm:font-normal max-[480px]:text-base max-[480px]:text-justify max-[480px]:px-4">
+              شما با خرید بلیط هواپیما از بلیط سفر با سامانه مطمئن و معتبری روبه‌رو هستید که تمام نیازهایتان را پاسخ می‌دهد. برای خرید آنلاین بلیط هواپیما در بلیط سفر کافیست مبدا، مقصد و تاریخ پرواز خود را انتخاب کنید. پس از کلیک روی جستجو، لیست قیمت بلیط هواپیما به مقصد مورد نظر شما ظاهر می‌شود. در این لیست، انتخابهای متعددی پیش روی شماست. برای اینکه گزینه‌ ها را برای خرید بلیط هواپیما محدودتر کنید، بلیط سفر ابزارهای مختلفی در اختیار شما می‌گذارد.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="responsive flex flex-col mt-8 justify-center">
+        <div class="py-6 flex justify-between items-center">
+          <span class="px-4 text-xl font-semibold max-sm:text-sm">هتل های پیشنهادی</span>
+          <a href="" class="hover:px-2 transition-all duration-200 px-5 flex justify-normal items-center gap-2">
+            <div>مشاهده همه</div>
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+          </a>
+        </div>
+        <div class="swiper mySwiper w-full">
+          <div class="swiper-wrapper" id="slider">
+     
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section><!-- اسلایدر های هتل ها -->
+
+      <section class="responsive flex flex-col mt-8 justify-center">
+        <div class="py-6 flex justify-between items-center">
+          <span class="px-4 text-xl font-semibold">تور های پیشنهادی</span>
+        </div>
+        <div class=" grid place-items-center grid-cols-2 sm:grid-cols-3  md:grid-cols-4  gap-y-5" id="tour">
+          
+        </div>
+      </section><!-- لیست تور ها -->
+
+      <section class="responsive mt-16 p-5 shadow-md rounded-xl bg-white mx-auto">  
+        <div class="px-14 max-md:px-3 flex max-md:flex-col-reverse max-md:gap-20 justify-between items-center">
+          <div class="title-app flex max-md:flex-col max-md:gap-4 gap-8 pr-20 max-md:pr-0">
+            <div class="flex flex-col justify-center items-center gap-1 px-1 py-2 border border-gray-400 rounded-lg">
+              <div class="qrCode">
+            <svg class="w-40 h-40" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" height="2048" width="2048"><svg xmlns="http://www.w3.org/2000/svg"><svg width="300" height="300"><defs style="transform: scale(1) translate(0px, 0px);"><clipPath id="clip-path-dot-color"><rect x="19" y="100" width="9" height="9" transform="rotate(0,23.5,104.5)"/><rect x="19" y="118" width="9" height="9" transform="rotate(0,23.5,122.5)"/><rect x="19" y="163" width="9" height="9" transform="rotate(0,23.5,167.5)"/><rect x="19" y="172" width="9" height="9" transform="rotate(0,23.5,176.5)"/><rect x="19" y="190" width="9" height="9" transform="rotate(0,23.5,194.5)"/><rect x="19" y="199" width="9" height="9" transform="rotate(0,23.5,203.5)"/><rect x="28" y="109" width="9" height="9" transform="rotate(0,32.5,113.5)"/><rect x="28" y="127" width="9" height="9" transform="rotate(0,32.5,131.5)"/><rect x="28" y="136" width="9" height="9" transform="rotate(0,32.5,140.5)"/><rect x="28" y="145" width="9" height="9" transform="rotate(0,32.5,149.5)"/><rect x="28" y="163" width="9" height="9" transform="rotate(0,32.5,167.5)"/><rect x="28" y="181" width="9" height="9" transform="rotate(0,32.5,185.5)"/><rect x="28" y="199" width="9" height="9" transform="rotate(0,32.5,203.5)"/><rect x="37" y="100" width="9" height="9" transform="rotate(0,41.5,104.5)"/><rect x="37" y="136" width="9" height="9" transform="rotate(0,41.5,140.5)"/><rect x="37" y="172" width="9" height="9" transform="rotate(0,41.5,176.5)"/><rect x="37" y="181" width="9" height="9" transform="rotate(0,41.5,185.5)"/><rect x="37" y="190" width="9" height="9" transform="rotate(0,41.5,194.5)"/><rect x="37" y="199" width="9" height="9" transform="rotate(0,41.5,203.5)"/><rect x="46" y="91" width="9" height="9" transform="rotate(0,50.5,95.5)"/><rect x="46" y="100" width="9" height="9" transform="rotate(0,50.5,104.5)"/><rect x="46" y="145" width="9" height="9" transform="rotate(0,50.5,149.5)"/><rect x="46" y="172" width="9" height="9" transform="rotate(0,50.5,176.5)"/><rect x="46" y="199" width="9" height="9" transform="rotate(0,50.5,203.5)"/><rect x="55" y="109" width="9" height="9" transform="rotate(0,59.5,113.5)"/><rect x="55" y="118" width="9" height="9" transform="rotate(0,59.5,122.5)"/><rect x="55" y="127" width="9" height="9" transform="rotate(0,59.5,131.5)"/><rect x="55" y="136" width="9" height="9" transform="rotate(0,59.5,140.5)"/><rect x="55" y="145" width="9" height="9" transform="rotate(0,59.5,149.5)"/><rect x="55" y="163" width="9" height="9" transform="rotate(0,59.5,167.5)"/><rect x="55" y="181" width="9" height="9" transform="rotate(0,59.5,185.5)"/><rect x="64" y="91" width="9" height="9" transform="rotate(0,68.5,95.5)"/><rect x="64" y="109" width="9" height="9" transform="rotate(0,68.5,113.5)"/><rect x="64" y="118" width="9" height="9" transform="rotate(0,68.5,122.5)"/><rect x="64" y="136" width="9" height="9" transform="rotate(0,68.5,140.5)"/><rect x="64" y="163" width="9" height="9" transform="rotate(0,68.5,167.5)"/><rect x="64" y="172" width="9" height="9" transform="rotate(0,68.5,176.5)"/><rect x="64" y="181" width="9" height="9" transform="rotate(0,68.5,185.5)"/><rect x="64" y="199" width="9" height="9" transform="rotate(0,68.5,203.5)"/><rect x="73" y="91" width="9" height="9" transform="rotate(0,77.5,95.5)"/><rect x="73" y="109" width="9" height="9" transform="rotate(0,77.5,113.5)"/><rect x="73" y="127" width="9" height="9" transform="rotate(0,77.5,131.5)"/><rect x="73" y="145" width="9" height="9" transform="rotate(0,77.5,149.5)"/><rect x="73" y="163" width="9" height="9" transform="rotate(0,77.5,167.5)"/><rect x="73" y="181" width="9" height="9" transform="rotate(0,77.5,185.5)"/><rect x="73" y="199" width="9" height="9" transform="rotate(0,77.5,203.5)"/><rect x="82" y="91" width="9" height="9" transform="rotate(0,86.5,95.5)"/><rect x="82" y="100" width="9" height="9" transform="rotate(0,86.5,104.5)"/><rect x="82" y="127" width="9" height="9" transform="rotate(0,86.5,131.5)"/><rect x="82" y="172" width="9" height="9" transform="rotate(0,86.5,176.5)"/><rect x="82" y="199" width="9" height="9" transform="rotate(0,86.5,203.5)"/><rect x="91" y="28" width="9" height="9" transform="rotate(0,95.5,32.5)"/><rect x="91" y="37" width="9" height="9" transform="rotate(0,95.5,41.5)"/><rect x="91" y="73" width="9" height="9" transform="rotate(0,95.5,77.5)"/><rect x="91" y="100" width="9" height="9" transform="rotate(0,95.5,104.5)"/><rect x="91" y="118" width="9" height="9" transform="rotate(0,95.5,122.5)"/><rect x="91" y="127" width="9" height="9" transform="rotate(0,95.5,131.5)"/><rect x="91" y="136" width="9" height="9" transform="rotate(0,95.5,140.5)"/><rect x="91" y="172" width="9" height="9" transform="rotate(0,95.5,176.5)"/><rect x="91" y="190" width="9" height="9" transform="rotate(0,95.5,194.5)"/><rect x="91" y="199" width="9" height="9" transform="rotate(0,95.5,203.5)"/><rect x="91" y="217" width="9" height="9" transform="rotate(0,95.5,221.5)"/><rect x="91" y="226" width="9" height="9" transform="rotate(0,95.5,230.5)"/><rect x="91" y="244" width="9" height="9" transform="rotate(0,95.5,248.5)"/><rect x="100" y="19" width="9" height="9" transform="rotate(0,104.5,23.5)"/><rect x="100" y="82" width="9" height="9" transform="rotate(0,104.5,86.5)"/><rect x="100" y="118" width="9" height="9" transform="rotate(0,104.5,122.5)"/><rect x="100" y="127" width="9" height="9" transform="rotate(0,104.5,131.5)"/><rect x="100" y="136" width="9" height="9" transform="rotate(0,104.5,140.5)"/><rect x="100" y="145" width="9" height="9" transform="rotate(0,104.5,149.5)"/><rect x="100" y="163" width="9" height="9" transform="rotate(0,104.5,167.5)"/><rect x="100" y="172" width="9" height="9" transform="rotate(0,104.5,176.5)"/><rect x="100" y="199" width="9" height="9" transform="rotate(0,104.5,203.5)"/><rect x="100" y="208" width="9" height="9" transform="rotate(0,104.5,212.5)"/><rect x="100" y="217" width="9" height="9" transform="rotate(0,104.5,221.5)"/><rect x="100" y="244" width="9" height="9" transform="rotate(0,104.5,248.5)"/><rect x="100" y="253" width="9" height="9" transform="rotate(0,104.5,257.5)"/><rect x="100" y="262" width="9" height="9" transform="rotate(0,104.5,266.5)"/><rect x="100" y="271" width="9" height="9" transform="rotate(0,104.5,275.5)"/><rect x="109" y="19" width="9" height="9" transform="rotate(0,113.5,23.5)"/><rect x="109" y="37" width="9" height="9" transform="rotate(0,113.5,41.5)"/><rect x="109" y="46" width="9" height="9" transform="rotate(0,113.5,50.5)"/><rect x="109" y="64" width="9" height="9" transform="rotate(0,113.5,68.5)"/><rect x="109" y="73" width="9" height="9" transform="rotate(0,113.5,77.5)"/><rect x="109" y="82" width="9" height="9" transform="rotate(0,113.5,86.5)"/><rect x="109" y="109" width="9" height="9" transform="rotate(0,113.5,113.5)"/><rect x="109" y="127" width="9" height="9" transform="rotate(0,113.5,131.5)"/><rect x="109" y="136" width="9" height="9" transform="rotate(0,113.5,140.5)"/><rect x="109" y="145" width="9" height="9" transform="rotate(0,113.5,149.5)"/><rect x="109" y="172" width="9" height="9" transform="rotate(0,113.5,176.5)"/><rect x="109" y="199" width="9" height="9" transform="rotate(0,113.5,203.5)"/><rect x="109" y="208" width="9" height="9" transform="rotate(0,113.5,212.5)"/><rect x="109" y="226" width="9" height="9" transform="rotate(0,113.5,230.5)"/><rect x="109" y="235" width="9" height="9" transform="rotate(0,113.5,239.5)"/><rect x="109" y="253" width="9" height="9" transform="rotate(0,113.5,257.5)"/><rect x="109" y="271" width="9" height="9" transform="rotate(0,113.5,275.5)"/><rect x="118" y="55" width="9" height="9" transform="rotate(0,122.5,59.5)"/><rect x="118" y="82" width="9" height="9" transform="rotate(0,122.5,86.5)"/><rect x="118" y="91" width="9" height="9" transform="rotate(0,122.5,95.5)"/><rect x="118" y="100" width="9" height="9" transform="rotate(0,122.5,104.5)"/><rect x="118" y="109" width="9" height="9" transform="rotate(0,122.5,113.5)"/><rect x="118" y="127" width="9" height="9" transform="rotate(0,122.5,131.5)"/><rect x="118" y="136" width="9" height="9" transform="rotate(0,122.5,140.5)"/><rect x="118" y="145" width="9" height="9" transform="rotate(0,122.5,149.5)"/><rect x="118" y="163" width="9" height="9" transform="rotate(0,122.5,167.5)"/><rect x="118" y="181" width="9" height="9" transform="rotate(0,122.5,185.5)"/><rect x="118" y="190" width="9" height="9" transform="rotate(0,122.5,194.5)"/><rect x="118" y="199" width="9" height="9" transform="rotate(0,122.5,203.5)"/><rect x="118" y="217" width="9" height="9" transform="rotate(0,122.5,221.5)"/><rect x="118" y="226" width="9" height="9" transform="rotate(0,122.5,230.5)"/><rect x="127" y="28" width="9" height="9" transform="rotate(0,131.5,32.5)"/><rect x="127" y="73" width="9" height="9" transform="rotate(0,131.5,77.5)"/><rect x="127" y="82" width="9" height="9" transform="rotate(0,131.5,86.5)"/><rect x="127" y="109" width="9" height="9" transform="rotate(0,131.5,113.5)"/><rect x="127" y="127" width="9" height="9" transform="rotate(0,131.5,131.5)"/><rect x="127" y="145" width="9" height="9" transform="rotate(0,131.5,149.5)"/><rect x="127" y="163" width="9" height="9" transform="rotate(0,131.5,167.5)"/><rect x="127" y="199" width="9" height="9" transform="rotate(0,131.5,203.5)"/><rect x="127" y="208" width="9" height="9" transform="rotate(0,131.5,212.5)"/><rect x="127" y="217" width="9" height="9" transform="rotate(0,131.5,221.5)"/><rect x="127" y="244" width="9" height="9" transform="rotate(0,131.5,248.5)"/><rect x="127" y="262" width="9" height="9" transform="rotate(0,131.5,266.5)"/><rect x="136" y="46" width="9" height="9" transform="rotate(0,140.5,50.5)"/><rect x="136" y="64" width="9" height="9" transform="rotate(0,140.5,68.5)"/><rect x="136" y="82" width="9" height="9" transform="rotate(0,140.5,86.5)"/><rect x="136" y="91" width="9" height="9" transform="rotate(0,140.5,95.5)"/><rect x="136" y="118" width="9" height="9" transform="rotate(0,140.5,122.5)"/><rect x="136" y="127" width="9" height="9" transform="rotate(0,140.5,131.5)"/><rect x="136" y="136" width="9" height="9" transform="rotate(0,140.5,140.5)"/><rect x="136" y="154" width="9" height="9" transform="rotate(0,140.5,158.5)"/><rect x="136" y="181" width="9" height="9" transform="rotate(0,140.5,185.5)"/><rect x="136" y="190" width="9" height="9" transform="rotate(0,140.5,194.5)"/><rect x="136" y="199" width="9" height="9" transform="rotate(0,140.5,203.5)"/><rect x="136" y="217" width="9" height="9" transform="rotate(0,140.5,221.5)"/><rect x="136" y="244" width="9" height="9" transform="rotate(0,140.5,248.5)"/><rect x="136" y="271" width="9" height="9" transform="rotate(0,140.5,275.5)"/><rect x="145" y="19" width="9" height="9" transform="rotate(0,149.5,23.5)"/><rect x="145" y="28" width="9" height="9" transform="rotate(0,149.5,32.5)"/><rect x="145" y="37" width="9" height="9" transform="rotate(0,149.5,41.5)"/><rect x="145" y="64" width="9" height="9" transform="rotate(0,149.5,68.5)"/><rect x="145" y="73" width="9" height="9" transform="rotate(0,149.5,77.5)"/><rect x="145" y="82" width="9" height="9" transform="rotate(0,149.5,86.5)"/><rect x="145" y="100" width="9" height="9" transform="rotate(0,149.5,104.5)"/><rect x="145" y="109" width="9" height="9" transform="rotate(0,149.5,113.5)"/><rect x="145" y="136" width="9" height="9" transform="rotate(0,149.5,140.5)"/><rect x="145" y="154" width="9" height="9" transform="rotate(0,149.5,158.5)"/><rect x="145" y="163" width="9" height="9" transform="rotate(0,149.5,167.5)"/><rect x="145" y="172" width="9" height="9" transform="rotate(0,149.5,176.5)"/><rect x="145" y="181" width="9" height="9" transform="rotate(0,149.5,185.5)"/><rect x="145" y="190" width="9" height="9" transform="rotate(0,149.5,194.5)"/><rect x="145" y="208" width="9" height="9" transform="rotate(0,149.5,212.5)"/><rect x="145" y="217" width="9" height="9" transform="rotate(0,149.5,221.5)"/><rect x="145" y="244" width="9" height="9" transform="rotate(0,149.5,248.5)"/><rect x="145" y="253" width="9" height="9" transform="rotate(0,149.5,257.5)"/><rect x="145" y="271" width="9" height="9" transform="rotate(0,149.5,275.5)"/><rect x="154" y="28" width="9" height="9" transform="rotate(0,158.5,32.5)"/><rect x="154" y="55" width="9" height="9" transform="rotate(0,158.5,59.5)"/><rect x="154" y="64" width="9" height="9" transform="rotate(0,158.5,68.5)"/><rect x="154" y="82" width="9" height="9" transform="rotate(0,158.5,86.5)"/><rect x="154" y="118" width="9" height="9" transform="rotate(0,158.5,122.5)"/><rect x="154" y="127" width="9" height="9" transform="rotate(0,158.5,131.5)"/><rect x="154" y="136" width="9" height="9" transform="rotate(0,158.5,140.5)"/><rect x="154" y="163" width="9" height="9" transform="rotate(0,158.5,167.5)"/><rect x="154" y="181" width="9" height="9" transform="rotate(0,158.5,185.5)"/><rect x="154" y="190" width="9" height="9" transform="rotate(0,158.5,194.5)"/><rect x="154" y="199" width="9" height="9" transform="rotate(0,158.5,203.5)"/><rect x="154" y="244" width="9" height="9" transform="rotate(0,158.5,248.5)"/><rect x="154" y="262" width="9" height="9" transform="rotate(0,158.5,266.5)"/><rect x="154" y="271" width="9" height="9" transform="rotate(0,158.5,275.5)"/><rect x="163" y="37" width="9" height="9" transform="rotate(0,167.5,41.5)"/><rect x="163" y="55" width="9" height="9" transform="rotate(0,167.5,59.5)"/><rect x="163" y="73" width="9" height="9" transform="rotate(0,167.5,77.5)"/><rect x="163" y="91" width="9" height="9" transform="rotate(0,167.5,95.5)"/><rect x="163" y="118" width="9" height="9" transform="rotate(0,167.5,122.5)"/><rect x="163" y="136" width="9" height="9" transform="rotate(0,167.5,140.5)"/><rect x="163" y="145" width="9" height="9" transform="rotate(0,167.5,149.5)"/><rect x="163" y="154" width="9" height="9" transform="rotate(0,167.5,158.5)"/><rect x="163" y="163" width="9" height="9" transform="rotate(0,167.5,167.5)"/><rect x="163" y="172" width="9" height="9" transform="rotate(0,167.5,176.5)"/><rect x="163" y="181" width="9" height="9" transform="rotate(0,167.5,185.5)"/><rect x="163" y="190" width="9" height="9" transform="rotate(0,167.5,194.5)"/><rect x="163" y="199" width="9" height="9" transform="rotate(0,167.5,203.5)"/><rect x="163" y="217" width="9" height="9" transform="rotate(0,167.5,221.5)"/><rect x="163" y="235" width="9" height="9" transform="rotate(0,167.5,239.5)"/><rect x="172" y="28" width="9" height="9" transform="rotate(0,176.5,32.5)"/><rect x="172" y="37" width="9" height="9" transform="rotate(0,176.5,41.5)"/><rect x="172" y="55" width="9" height="9" transform="rotate(0,176.5,59.5)"/><rect x="172" y="91" width="9" height="9" transform="rotate(0,176.5,95.5)"/><rect x="172" y="109" width="9" height="9" transform="rotate(0,176.5,113.5)"/><rect x="172" y="118" width="9" height="9" transform="rotate(0,176.5,122.5)"/><rect x="172" y="136" width="9" height="9" transform="rotate(0,176.5,140.5)"/><rect x="172" y="163" width="9" height="9" transform="rotate(0,176.5,167.5)"/><rect x="172" y="181" width="9" height="9" transform="rotate(0,176.5,185.5)"/><rect x="172" y="208" width="9" height="9" transform="rotate(0,176.5,212.5)"/><rect x="172" y="226" width="9" height="9" transform="rotate(0,176.5,230.5)"/><rect x="172" y="244" width="9" height="9" transform="rotate(0,176.5,248.5)"/><rect x="172" y="253" width="9" height="9" transform="rotate(0,176.5,257.5)"/><rect x="172" y="271" width="9" height="9" transform="rotate(0,176.5,275.5)"/><rect x="181" y="19" width="9" height="9" transform="rotate(0,185.5,23.5)"/><rect x="181" y="28" width="9" height="9" transform="rotate(0,185.5,32.5)"/><rect x="181" y="37" width="9" height="9" transform="rotate(0,185.5,41.5)"/><rect x="181" y="73" width="9" height="9" transform="rotate(0,185.5,77.5)"/><rect x="181" y="109" width="9" height="9" transform="rotate(0,185.5,113.5)"/><rect x="181" y="118" width="9" height="9" transform="rotate(0,185.5,122.5)"/><rect x="181" y="127" width="9" height="9" transform="rotate(0,185.5,131.5)"/><rect x="181" y="163" width="9" height="9" transform="rotate(0,185.5,167.5)"/><rect x="181" y="172" width="9" height="9" transform="rotate(0,185.5,176.5)"/><rect x="181" y="181" width="9" height="9" transform="rotate(0,185.5,185.5)"/><rect x="181" y="190" width="9" height="9" transform="rotate(0,185.5,194.5)"/><rect x="181" y="199" width="9" height="9" transform="rotate(0,185.5,203.5)"/><rect x="181" y="226" width="9" height="9" transform="rotate(0,185.5,230.5)"/><rect x="181" y="271" width="9" height="9" transform="rotate(0,185.5,275.5)"/><rect x="190" y="55" width="9" height="9" transform="rotate(0,194.5,59.5)"/><rect x="190" y="91" width="9" height="9" transform="rotate(0,194.5,95.5)"/><rect x="190" y="100" width="9" height="9" transform="rotate(0,194.5,104.5)"/><rect x="190" y="109" width="9" height="9" transform="rotate(0,194.5,113.5)"/><rect x="190" y="118" width="9" height="9" transform="rotate(0,194.5,122.5)"/><rect x="190" y="136" width="9" height="9" transform="rotate(0,194.5,140.5)"/><rect x="190" y="154" width="9" height="9" transform="rotate(0,194.5,158.5)"/><rect x="190" y="163" width="9" height="9" transform="rotate(0,194.5,167.5)"/><rect x="190" y="181" width="9" height="9" transform="rotate(0,194.5,185.5)"/><rect x="190" y="190" width="9" height="9" transform="rotate(0,194.5,194.5)"/><rect x="190" y="208" width="9" height="9" transform="rotate(0,194.5,212.5)"/><rect x="190" y="217" width="9" height="9" transform="rotate(0,194.5,221.5)"/><rect x="190" y="244" width="9" height="9" transform="rotate(0,194.5,248.5)"/><rect x="190" y="262" width="9" height="9" transform="rotate(0,194.5,266.5)"/><rect x="199" y="19" width="9" height="9" transform="rotate(0,203.5,23.5)"/><rect x="199" y="28" width="9" height="9" transform="rotate(0,203.5,32.5)"/><rect x="199" y="37" width="9" height="9" transform="rotate(0,203.5,41.5)"/><rect x="199" y="55" width="9" height="9" transform="rotate(0,203.5,59.5)"/><rect x="199" y="73" width="9" height="9" transform="rotate(0,203.5,77.5)"/><rect x="199" y="136" width="9" height="9" transform="rotate(0,203.5,140.5)"/><rect x="199" y="163" width="9" height="9" transform="rotate(0,203.5,167.5)"/><rect x="199" y="190" width="9" height="9" transform="rotate(0,203.5,194.5)"/><rect x="199" y="199" width="9" height="9" transform="rotate(0,203.5,203.5)"/><rect x="199" y="208" width="9" height="9" transform="rotate(0,203.5,212.5)"/><rect x="199" y="217" width="9" height="9" transform="rotate(0,203.5,221.5)"/><rect x="199" y="226" width="9" height="9" transform="rotate(0,203.5,230.5)"/><rect x="199" y="235" width="9" height="9" transform="rotate(0,203.5,239.5)"/><rect x="199" y="244" width="9" height="9" transform="rotate(0,203.5,248.5)"/><rect x="199" y="253" width="9" height="9" transform="rotate(0,203.5,257.5)"/><rect x="199" y="262" width="9" height="9" transform="rotate(0,203.5,266.5)"/><rect x="208" y="91" width="9" height="9" transform="rotate(0,212.5,95.5)"/><rect x="208" y="118" width="9" height="9" transform="rotate(0,212.5,122.5)"/><rect x="208" y="127" width="9" height="9" transform="rotate(0,212.5,131.5)"/><rect x="208" y="136" width="9" height="9" transform="rotate(0,212.5,140.5)"/><rect x="208" y="154" width="9" height="9" transform="rotate(0,212.5,158.5)"/><rect x="208" y="163" width="9" height="9" transform="rotate(0,212.5,167.5)"/><rect x="208" y="172" width="9" height="9" transform="rotate(0,212.5,176.5)"/><rect x="208" y="181" width="9" height="9" transform="rotate(0,212.5,185.5)"/><rect x="208" y="199" width="9" height="9" transform="rotate(0,212.5,203.5)"/><rect x="208" y="235" width="9" height="9" transform="rotate(0,212.5,239.5)"/><rect x="208" y="244" width="9" height="9" transform="rotate(0,212.5,248.5)"/><rect x="208" y="271" width="9" height="9" transform="rotate(0,212.5,275.5)"/><rect x="217" y="136" width="9" height="9" transform="rotate(0,221.5,140.5)"/><rect x="217" y="154" width="9" height="9" transform="rotate(0,221.5,158.5)"/><rect x="217" y="163" width="9" height="9" transform="rotate(0,221.5,167.5)"/><rect x="217" y="199" width="9" height="9" transform="rotate(0,221.5,203.5)"/><rect x="217" y="217" width="9" height="9" transform="rotate(0,221.5,221.5)"/><rect x="217" y="235" width="9" height="9" transform="rotate(0,221.5,239.5)"/><rect x="217" y="244" width="9" height="9" transform="rotate(0,221.5,248.5)"/><rect x="217" y="253" width="9" height="9" transform="rotate(0,221.5,257.5)"/><rect x="217" y="271" width="9" height="9" transform="rotate(0,221.5,275.5)"/><rect x="226" y="145" width="9" height="9" transform="rotate(0,230.5,149.5)"/><rect x="226" y="154" width="9" height="9" transform="rotate(0,230.5,158.5)"/><rect x="226" y="163" width="9" height="9" transform="rotate(0,230.5,167.5)"/><rect x="226" y="172" width="9" height="9" transform="rotate(0,230.5,176.5)"/><rect x="226" y="190" width="9" height="9" transform="rotate(0,230.5,194.5)"/><rect x="226" y="199" width="9" height="9" transform="rotate(0,230.5,203.5)"/><rect x="226" y="235" width="9" height="9" transform="rotate(0,230.5,239.5)"/><rect x="226" y="244" width="9" height="9" transform="rotate(0,230.5,248.5)"/><rect x="226" y="262" width="9" height="9" transform="rotate(0,230.5,266.5)"/><rect x="226" y="271" width="9" height="9" transform="rotate(0,230.5,275.5)"/><rect x="235" y="109" width="9" height="9" transform="rotate(0,239.5,113.5)"/><rect x="235" y="118" width="9" height="9" transform="rotate(0,239.5,122.5)"/><rect x="235" y="127" width="9" height="9" transform="rotate(0,239.5,131.5)"/><rect x="235" y="145" width="9" height="9" transform="rotate(0,239.5,149.5)"/><rect x="235" y="172" width="9" height="9" transform="rotate(0,239.5,176.5)"/><rect x="235" y="190" width="9" height="9" transform="rotate(0,239.5,194.5)"/><rect x="235" y="199" width="9" height="9" transform="rotate(0,239.5,203.5)"/><rect x="235" y="208" width="9" height="9" transform="rotate(0,239.5,212.5)"/><rect x="235" y="217" width="9" height="9" transform="rotate(0,239.5,221.5)"/><rect x="235" y="226" width="9" height="9" transform="rotate(0,239.5,230.5)"/><rect x="235" y="235" width="9" height="9" transform="rotate(0,239.5,239.5)"/><rect x="235" y="262" width="9" height="9" transform="rotate(0,239.5,266.5)"/><rect x="235" y="271" width="9" height="9" transform="rotate(0,239.5,275.5)"/><rect x="244" y="145" width="9" height="9" transform="rotate(0,248.5,149.5)"/><rect x="244" y="190" width="9" height="9" transform="rotate(0,248.5,194.5)"/><rect x="244" y="199" width="9" height="9" transform="rotate(0,248.5,203.5)"/><rect x="244" y="226" width="9" height="9" transform="rotate(0,248.5,230.5)"/><rect x="244" y="235" width="9" height="9" transform="rotate(0,248.5,239.5)"/><rect x="244" y="262" width="9" height="9" transform="rotate(0,248.5,266.5)"/><rect x="253" y="91" width="9" height="9" transform="rotate(0,257.5,95.5)"/><rect x="253" y="100" width="9" height="9" transform="rotate(0,257.5,104.5)"/><rect x="253" y="118" width="9" height="9" transform="rotate(0,257.5,122.5)"/><rect x="253" y="127" width="9" height="9" transform="rotate(0,257.5,131.5)"/><rect x="253" y="154" width="9" height="9" transform="rotate(0,257.5,158.5)"/><rect x="253" y="181" width="9" height="9" transform="rotate(0,257.5,185.5)"/><rect x="253" y="208" width="9" height="9" transform="rotate(0,257.5,212.5)"/><rect x="253" y="235" width="9" height="9" transform="rotate(0,257.5,239.5)"/><rect x="253" y="262" width="9" height="9" transform="rotate(0,257.5,266.5)"/><rect x="253" y="271" width="9" height="9" transform="rotate(0,257.5,275.5)"/><rect x="262" y="91" width="9" height="9" transform="rotate(0,266.5,95.5)"/><rect x="262" y="118" width="9" height="9" transform="rotate(0,266.5,122.5)"/><rect x="262" y="136" width="9" height="9" transform="rotate(0,266.5,140.5)"/><rect x="262" y="217" width="9" height="9" transform="rotate(0,266.5,221.5)"/><rect x="262" y="244" width="9" height="9" transform="rotate(0,266.5,248.5)"/><rect x="271" y="118" width="9" height="9" transform="rotate(0,275.5,122.5)"/><rect x="271" y="136" width="9" height="9" transform="rotate(0,275.5,140.5)"/><rect x="271" y="154" width="9" height="9" transform="rotate(0,275.5,158.5)"/><rect x="271" y="163" width="9" height="9" transform="rotate(0,275.5,167.5)"/><rect x="271" y="181" width="9" height="9" transform="rotate(0,275.5,185.5)"/><rect x="271" y="199" width="9" height="9" transform="rotate(0,275.5,203.5)"/><rect x="271" y="217" width="9" height="9" transform="rotate(0,275.5,221.5)"/><rect x="271" y="226" width="9" height="9" transform="rotate(0,275.5,230.5)"/><rect x="271" y="235" width="9" height="9" transform="rotate(0,275.5,239.5)"/><rect x="271" y="271" width="9" height="9" transform="rotate(0,275.5,275.5)"/></clipPath><clipPath id="clip-path-corners-square-color-0-0"><path clip-rule="evenodd" d="M 19 19v 63h 63v -63zM 28 28h 45v 45h -45z" transform="rotate(0,50.5,50.5)"/></clipPath><clipPath id="clip-path-corners-dot-color-0-0"><rect x="37" y="37" width="27" height="27" transform="rotate(0,50.5,50.5)"/></clipPath><clipPath id="clip-path-corners-square-color-1-0"><path clip-rule="evenodd" d="M 217 19v 63h 63v -63zM 226 28h 45v 45h -45z" transform="rotate(90,248.5,50.5)"/></clipPath><clipPath id="clip-path-corners-dot-color-1-0"><rect x="235" y="37" width="27" height="27" transform="rotate(90,248.5,50.5)"/></clipPath><clipPath id="clip-path-corners-square-color-0-1"><path clip-rule="evenodd" d="M 19 217v 63h 63v -63zM 28 226h 45v 45h -45z" transform="rotate(-90,50.5,248.5)"/></clipPath><clipPath id="clip-path-corners-dot-color-0-1"><rect x="37" y="235" width="27" height="27" transform="rotate(-90,50.5,248.5)"/></clipPath></defs><rect x="0" y="0" height="300" width="300" clip-path="url('#clip-path-background-color')" fill="#ffffff" style="transform: scale(1) translate(0px, 0px);"/><rect x="0" y="0" height="300" width="300" clip-path="url('#clip-path-dot-color')" fill="#000000" style="transform: scale(1) translate(0px, 0px);"/><rect x="19" y="19" height="63" width="63" clip-path="url('#clip-path-corners-square-color-0-0')" fill="#000000" style="transform: scale(1) translate(0px, 0px);"/><rect x="37" y="37" height="27" width="27" clip-path="url('#clip-path-corners-dot-color-0-0')" fill="#000000" style="transform: scale(1) translate(0px, 0px);"/><rect x="217" y="19" height="63" width="63" clip-path="url('#clip-path-corners-square-color-1-0')" fill="#000000" style="transform: scale(1) translate(0px, 0px);"/><rect x="235" y="37" height="27" width="27" clip-path="url('#clip-path-corners-dot-color-1-0')" fill="#000000" style="transform: scale(1) translate(0px, 0px);"/><rect x="19" y="217" height="63" width="63" clip-path="url('#clip-path-corners-square-color-0-1')" fill="#000000" style="transform: scale(1) translate(0px, 0px);"/><rect x="37" y="235" height="27" width="27" clip-path="url('#clip-path-corners-dot-color-0-1')" fill="#000000" style="transform: scale(1) translate(0px, 0px);"/></svg></svg></svg>
+              </div>
+              <span class="pb-2">برای دانلود اسکن کنید</span>
+            </div>
+            <div class="flex flex-col max-md:gap-3 max-md:items-center max-md:justify-center gap-10">
+              <div class="flex flex-col gap-2 max-md:items-center max-md:justify-center">
+                <div class="text-lg font-bold">اپلیکیشن بلیط سفر</div>
+                <div class="font-normal">راحت تر و سریع تر سفر کنید.</div>
+              </div>
+              <a href="" class="flex justify-normal items-center gap-1 hover:pr-4 transition-all duration-200">
+                <span class="text-cyan-700">مشاهده لینک های دانلود</span>
+                <svg class="w-5 h-5 fill-cyan-700 angle max-[500px]:w-2 max-[500px]:h-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" ><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" /></svg>  
+              </a>
+              <div class="flex justify-normal items-center gap-1">
+                <svg class="fill-gray-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M420.6 301.9a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m-265.1 0a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m273.7-144.5 47.9-83a10 10 0 1 0 -17.3-10h0l-48.5 84.1a301.3 301.3 0 0 0 -246.6 0L116.2 64.5a10 10 0 1 0 -17.3 10h0l47.9 83C64.5 202.2 8.2 285.6 0 384H576c-8.2-98.5-64.5-181.8-146.9-226.6"/></svg>
+                <svg class="fill-gray-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                <span class="text-gray-500 text-sm">قابلیت نصب روی Android و iOS</span>
+              </div>
+            </div>
+          </div>
+          <div class="img max-md:hidden">
+            <img src="./image/application.svg" alt="">
+          </div>
+        </div>
+      </section><!-- تبلیغ اپلیکیشن برنامه -->
+      
+      <section class="responsive mt-8 flex flex-col gap-2">
+        <div class="px-3 text-justify">
+          <h2 class="py-5 text-lg font-semibold">امکان استرداد بلیط هواپیما</h2>
+          <p class="text-gray-700 leading-8">یکی دیگر از امکانات بلیط استرداد آنلاین بلیط هواپیما (کنسلی بلیط) است. در صورتی که پس از رزرو بلیط هواپیما برنامه سفرتان تغییر کرده، به راحتی می‌توانید طبق قوانین کنسلی پرواز داخلی، بلیط هواپیمای خود را کنسل کنید. پس از استرداد، پول شما در کمترین زمان ممکن به حسابتان برگردانده می‌شود. شما برای خرید اینترنتی بلیط هواپیما از بلیط می‌توانید از تلفن همراه، رایانه شخصی یا تبلت استفاده کنید. بلیط در همه این ابزارها کاربرپسند است و شما خریدی آسان را تجربه خواهید کرد. همچنین امکان نصب و استفاده از اپلیکیشن بلیط برای گوشی های اندروید و آیفون وجود دارد.
+            رزرو بلیط هواپیما از معتبرترین ایرلاین‌ها</p>
+        </div>
+        <div class="px-3 text-justify">
+          <h2 class="py-5 text-lg font-semibold">رزرو بلیط قطار</h2>
+          <p class="text-gray-700 leading-8">رزرو بلیط قطار، سفر با قطار را راحت‌تر از همیشه کرده است. برای خرید اینترنتی بلیط قطار کافی است وارد وب‌سایت بلیط شوید، سپس با وارد کردن نام شهر مبدا و مقصد و تاریخ رفت و برگشت می‌توانید تمام قطارهای شرکت‌های ریلی در مسیر مورد نظرتان را مشاهده کنید. بسته به ساعت حرکت، امکانات قطار و بودجه می‌توانید مناسب‌ترین بلیط را انتخاب کنید و با نهایی کردن رزرو بلیط قطار و پرداخت آن، بلیط خود را به صورت آنلاین دریافت کنید.</p>
+        </div>
+        <div class="px-3 text-justify">
+          <h2 class="py-5 text-lg font-semibold">استرداد بلیط اتوبوس</h2>
+          <p class="text-gray-700 leading-8">طبیعی است که گاهی اوقات، سفرتان به هر دلیلی لغو شود. در این زمان به دنبال استرداد بلیط (کنسلی) هستید. اگر بلیط‌تان را از بلیط خریده‌اید، نگران نباشید؛ فرآیند استرداد بلیط اتوبوس در بلیط راحت و بی‌دردسر است. کافی است وارد حساب کاربری‌تان شوید و روی نام کاربری‌تان کلیک کنید. در لیست نمایش داده شده، روی سفارشات و استردادها کلیک کنید. در صفحه بعد شماره سفارش خود را وارد و سپس روی جستجو کلیک کنید.</p>
+        </div>
+     
+      </section> <!-- متن برای بلیط ها -->
+
+      <section class="max-[480px]:gap-2 responsive mt-12 grid grid-cols-3 place-items-center gap-10 px-3 max-[1300px]:grid-cols-2 max-[480px]:grid-cols-1">
+        <div class="flex items-center gap-4  max-[480px]:border-b pb-4 border-gray-800">
+          <div class="w-[120px] h-[90px]">
+            <img src="./image/best.svg" class="w-full h-full">
+          </div>
+          <div>
+            <div class="text-lg font-semibold py-2">رتبه یک سفر</div>
+            <p class="text-gray-800">معتبرترین عرضه‌کننده محصولات گردشگری در ایران</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4  max-[480px]:border-b pb-4 border-gray-800">
+          <div class="w-[120px] h-[90px]">
+            <img src="./image/wifi.svg" class="w-full h-full">
+          </div>
+          <div>
+            <div class="text-lg font-semibold py-2">همسفر هر سفر</div>
+            <p class="text-gray-800">ارائه تمامی خدمات سفر (پرواز، قطار،هتل، اتوبوس و تور)</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4  max-[480px]:border-b pb-4 border-gray-800 max-[1300px]:col-span-2 max-[1300px]:mx-auto max-[480px]:col-span-1">
+          <div class="w-[120px] h-[90px]">
+            <img src="./image/poshtibani.svg" class="w-full h-full">
+          </div>
+          <div>
+            <div class="text-lg font-semibold py-2">همسفر همه لحظات سفر</div>
+            <p class="text-gray-800">پشتیبانی و همراهی ۲۴ ساعته در تمامی مراحل سفر</p>
+          </div>
+        </div>
+      </section><!-- نوار تبلیغی اخر -->
+
+      <footer class="mt-10 py-5 border-t border-gray-300">
+        <div class="px-5 responsive flex justify-normal items-center gap-5 py-5">
+          <div class="w-full flex flex-col gap-3">
+            <div class="flex gap-2 items-start justify-normal">
+              <img src="./image/logo.png">
+              <span class="text-lg font-semibold">بلیط‌ سفر</span>
+            </div>
+            <div>دفتر پشتیبانی: اصفهان نبش اتوبان اقابابایی کوی بیمه، خیابان بیمه چهارم، بن‌بست گل‌ها، پلاک 79</div>
+            <div>تلفن پشتیبانی: ۰۲۱ - ۴۳۹۰۰۰۰۰</div>
+          </div>
+          <div class="flex justify-around w-full">
+            <div class="text-gray-800 flex flex-col gap-3">
+              <div class="text-lg font-semibold text-black">بلیط سفر</div>
+              <a href="#" class="hover:text-gray-950 transition-all duration-150">درباره ما</a>
+              <a href="#" class="hover:text-gray-950 transition-all duration-150">تماس باما</a>
+              <a href="#" class="hover:text-gray-950 transition-all duration-150">بیمه مسافرتی</a>
+            </div>
+            <div class="text-gray-800 flex flex-col gap-3">
+              <div class="text-lg font-semibold text-black">خدمات مشتریان</div>
+              <a href="#" class="hover:text-gray-950 transition-all duration-150">مرکز پشتیبانی انلاین</a>
+              <a href="#" class="hover:text-gray-950 transition-all duration-150">راهنمای خرید</a>
+              <a href="#" class="hover:text-gray-950 transition-all duration-150">راهنمای استرداد</a>
+            </div>
+            <div class="text-gray-800 flex flex-col gap-3">
+              <div class="text-lg font-semibold text-black">اطلاعات تکمیلی</div>
+              <a href="#" class="hover:text-gray-950 transition-all duration-150">فروش سازمانی</a>
+              <a href="#" class="hover:text-gray-950 transition-all duration-150">همکاری با آژانس‌ها</a>
+              <a href="#" class="hover:text-gray-950 transition-all duration-150">سنجش رضایتمندی</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center w-10/12 mx-auto border-t pt-4">
+          <p class="text-sm text-gray-500">کلیه حقوق این سرویس (وب‌سایت و اپلیکیشن‌های موبایل) محفوظ و متعلق به شرکت سفرهای بلیط سفر می‌باشد. (نسخه 3.91.3)</p>
+        </div>
+      </footer>
+
+    </div>
+
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="lib/kamadatepicker.min.js"></script>
+    <script src="./lib/swiper-bundle.min.js"></script>
+    <script></script>
+    <script src="js/main.js"></script>
+    <script type="module" src="./js/run.js"></script>
+  </body>
+</html>
